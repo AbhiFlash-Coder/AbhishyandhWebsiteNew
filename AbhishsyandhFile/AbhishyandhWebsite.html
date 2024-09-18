@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=2.0'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Abhishyandh</title>
+    <link rel="icon" type="image/png" href="logo.jpg">
+    <style>
+/*about*/
+.container-abhishyandh {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px;
+        }
+        .h1-abhishyandh {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .about-content-abhishyandh {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+        .about-text-abhishyandh {
+            flex: 1;
+            padding-right: 30px;
+        }
+        .about-image-abhishyandh {
+            flex: 1;
+            text-align: center;
+        }
+        .about-image-abhishyandh img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+/* serices section*/
+.services-section-abhishyandh-s {
+            text-align: center;
+    padding: 50px;
+    background-image: url('bg-s.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+     
+        }
+        .h1-abhishyandh-s {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .container-wrapper-abhishyandh-s {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            gap: 30px;
+        }
+        .container-abhishyandh-s {
+            width: 24%;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            height: 450px;
+            flex-direction: column;
+        }
+        .container-abhishyandh-s:hover {
+            background-color: rgba(100, 149, 237, 0.7);
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+        }
+        .container-abhishyandh-s img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .containe-abhishyandh-sr h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .containe-abhishyandh-sr hr {
+            width: 50px;
+            border: 1px solid #333;
+            margin: 15px auto;
+        }
+        .container-abhishyandh-s p {
+            font-size: 16px;
+            line-height: 1.5;
+            padding: 0 10px;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+        }
+/*footer*/
+.dummy_page {
+    height:100px;
+    width: 100%;
+    background-color: #74C69D;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 60px 0px;
+}
+.footer {
+    width: 100%;
+    position: relative;
+    height: auto;
+    background-color: white;
+    overflow: hidden;
+}
+.footer .col {
+    width: 190px;
+    height: auto;
+    float: left;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0px 20px 20px 20px;
+}
+.footer .col h1 {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 17px;
+    padding: 20px 0px 5px 0px;
+    color: rgba(255,255,255,0.2);
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.250em;
+}
+.footer .col ul li {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+.footer .col ul li {
+    color: #999999;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 5px 0px 5px 0px;
+    cursor:pointer;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+}
+.social ul li {
+    display: inline-block;
+    padding-right: 5px !important;
+}
+.footer .col ul li:hover {
+    color: black;
+    transition: .1s;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+}
+.clearfix {
+    clear: both;
+}
+@media only screen and (min-width:1280px) {
+    .contain {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width:1139px) {
+.contain .social {
+width: 1000px;
+display: block;
+}
+.social h1{
+    margin: 0px;
+}
+}
+@media only screen and (max-width:950px) {
+    .footer .col {
+width: 33%;
+    }
+    .footer .col h1 {
+        font-size: 14px;
+    }
+    .footer .col ul li{
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width:500px) {
+    .footer .col {
+        width: 50%;
+    }
+    .footer .col h1{
+        font-size: 14px;
+    }
+    .footer .col ul li {
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width:340px) {
+    .footer .col{
+        width: 100%;
+    }
+}
+.social-media {
+    cursor: pointer;
+}
+
+/*copy right*/
+.copyright-abhishyandh{
+    background-color: #050510;
+    color: #999999;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    font-size: 14px;
+}  
+.copyright p {
+    margin: 0;
+}
+
+/*Navbar starts here*/
+:root {
+                --primary: #0969DA;
+                --background: white;
+                --gray: #847F90;
+                --white: black;
+                --navbar-height: 3.75rem;
+            }
+
+            body {
+                font-family: "Red Hat Display", sans-serif;
+                font-size: 16px;
+                cursor: pointer;
+                 
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .menu__wrapper-abhishyandh-N {
+                display: flex;
+                position: fixed;
+                flex-direction: row;
+                justify-content: flex-end; 
+                width: 100vw;
+                z-index: 2;
+                gap: 1.5rem;
+                background: var(--background);
+                height: var(--navbar-height);
+                padding: 0 1rem;
+                align-items: center;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+                transition: box-shadow 0.3s ease; 
+            }
+
+            .menu__wrapper-abhishyandh-N.scrolled {
+                box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+            }
+
+            .menu__bar-abhishyandh-N {
+                display: flex;
+                gap: 1.5rem;
+                align-items: center;
+                margin-right: auto; 
+            }
+
+            .logo-abhishyandh-N {
+                width: 2rem;
+                height: 2rem;
+                cursor: pointer;
+            }
+
+            .logo-abhishyandh-N svg {
+                fill: var(--white);
+            }
+
+            .navigation-abhishyandh-N {
+                display: flex;
+                flex-direction: row;
+                list-style-type: none;
+                align-items: center;
+                gap: 0.5rem;
+                background: var(--background);
+            }
+
+            .navigation-abhishyandh-N > li {
+                display: flex;
+                position: relative;
+                cursor: pointer;
+                align-items: center;
+                height: 2.625rem;
+            }
+
+            .navigation-abhishyandh-N > li > button > svg {
+                fill: var(--white);
+                color: var(--white);
+                transition: all 0.2s ease-in-out;
+            }
+
+            .navigation-abhishyandh-N > li > a {
+                color: var(--white);
+                font-size: 0.875rem;
+                text-decoration: none;
+                transition: all 0.2s ease-in-out;
+            }
+
+            .navigation-abhishyandh-N > li > button {
+                color: var(--white);
+                border-bottom: 2px solid transparent;
+                transition: all 0.3s ease;
+                text-decoration: none;
+                border: none;
+                cursor: pointer;
+                font-weight: 500;
+                gap: 0.25rem;
+                opacity: 1;
+                align-items: center;
+                font-size: 0.875rem;
+                flex-wrap: nowrap;
+                white-space: nowrap;
+                background: none;
+                display: flex;
+                padding: 0.185rem 0;
+                position: relative;
+                transition: all 0.2s ease-in-out;
+            }
+
+            .dropdown-abhishyandh-N {
+                position: absolute;
+                top: 2.625rem;
+                min-width: 15rem;
+                border-radius: 0.5rem;
+                background: white;
+                display: none;
+                flex-direction: column;
+                padding: 1rem;
+                box-shadow: 0 5px 30px rgba(27, 31, 35, 0.1), 0 0 1px rgba(27, 31, 35, 0.4), 0 1px 2px rgba(27, 31, 35, 0.15);
+                z-index: 2;
+                animation: fadeIn 0.2s ease-in-out;
+            }
+
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                    transform: scale(0.99) translateY(-0.7em);
+                    transform-origin: top;
+                }
+                to {
+                    opacity: 1;
+                    transform: scale(1) translateY(0);
+                }
+            }
+
+            .dropdown-abhishyandh-N h3 {
+                font-size: 0.875rem;
+                font-weight: 600;
+                margin-bottom: 0.5rem;
+            }
+
+            .list-menu-items-abhishyandh-N {
+                display: flex;
+                list-style-type: none;
+                flex-direction: column;
+                gap: 0.25rem;
+            }
+
+            .list-menu-items-abhishyandh-N > li > a {
+                display: flex;
+                gap: 1rem;
+                font-size: 0.875rem;
+                width: 100%;
+                color: var(--gray);
+                text-decoration: none;
+            }
+
+            .list-menu-items-abhishyandh-N > li > a:hover {
+                color: var(--primary);
+            }
+
+            .list-items-with-description-abhishyandh-N {
+                list-style-type: none;
+            }
+
+            .list-items-with-description-abhishyandh-N li {
+                display: flex;
+                padding: 0.25rem;
+                gap: 1rem;
+                width: 100%;
+            }
+
+            .list-items-with-description-abhishyandh-N li:hover {
+                color: var(--primary);
+            }
+
+            .list-items-with-description-abhishyandh-N li svg {
+                width: 1rem;
+                height: 1rem;
+                stroke: var(--primary);
+            }
+
+            .item-title-abhishyandh-N h3 {
+                font-size: 0.875rem;
+                font-weight: 600;
+            }
+
+            .item-title-abhishyandh-N p {
+                font-size: 0.75rem;
+            }
+
+            .navigation-abhishyandh-N > li:hover .dropdown-abhishyandh-N {
+                display: flex;
+                opacity: 1;
+            }
+
+            .action-buttons-abhishyandh-N {
+                display: flex;
+                gap: 0.5rem;
+                align-items: center;
+                flex-wrap: nowrap;
+            }
+
+            .action-buttons-abhishyandh-N a {
+                white-space: nowrap;
+                padding: 0.25rem 0.5rem;
+                transition: all 0.2s ease-in-out;
+            }
+
+            .action-buttons-abhishyandh-N a:hover {
+                opacity: .75;
+            }
+
+            .secondary-abhishyandh-N {
+                background: none;
+                color: var(--white);
+                outline: none;
+                border: none;
+            }
+
+            .primary-abhishyandh-N {
+                color: var(--white);
+                border-radius: 0.5rem;
+                border: 1px solid var(--white);
+            }
+
+            .burger-menu-abhishyandh-N {
+                display: none;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                background: transparent;
+            }
+
+            .burger-menu-abhishyandh-N svg {
+                stroke: var(--white);
+            }
+
+            @media (max-width: 600px) {
+                .hide-abhishyandh-N {
+                    display: none;
+                }
+
+                .menu__wrappe-abhishyandh-Nr {
+                    justify-content: flex-end;
+                }
+
+                .action-buttons-abhishyandh-N {
+                    order: -1;
+                }
+
+                .burger-menu-abhishyandh-N {
+                    display: flex;
+                    align-items: center;
+                }
+            } 
+/*Our Capabilities*/
+.flex-container123-abhishyandh-c {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+}
+
+.main-flex-box123-abhishyandh-c {
+  width: 400px;
+padding: 20px;
+margin: 10px;
+border: 1px solid #ccc;
+border-radius: 10px;
+text-align: center;
+border-radius: 10px;
+box-shadow: 0 0 5px;
+}
+
+.main-flex-box123-abhishyandh-c img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.btn123{
+  padding: 10px 20px;
+  background-color: #39d4a0;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.about-abhishyandh{
+    background-color: whitesmoke;
+}
+
+/*contact us*/
+.container-abhishyandh-con {
+  display: flex;
+  padding: 60px;
+  border-radius: 20px;
+  border: 1px solid black;
+  box-shadow: 0 0 2px;
+}
+ 
+
+.left-side {
+  width: 60%;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.right-side {
+  width: 40%;
+  background-color: #000080;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.input-dash {
+  width: 200px;
+  height: 1px;
+  background-color: #000;
+  margin-top: 10px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap:2px;
+}
+
+select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.btn {
+  background-color: orange;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: navy;
+}
+
+.underline-input {
+  border: none;
+  border-bottom: 2px solid #000;
+  background-color: transparent;
+  outline: none;
+  padding: 5px 0;
+  font-size: 16px;
+  width: 100%;  
+}
+
+.underline-input:focus {
+  border-bottom-color: #007bff;
+}
+   
+
+                   
+
+</style>
+     
+ 
+ 
+ <!----------------------------------------------------Navbar start here---------------------------------------------------------------->
+ 
+<div class="background-abhishyandh-N">
+            <nav class="menu__wrapper-abhishyandh-N">
+                <div class="menu__bar-abhishyandh-N">
+                    <a
+                        href="#"
+                        title="Logo-abhishyandh-N"
+                        class="logo-abhishyandh-N">
+                        <img src="logo.jpg" style="width: 50px; height: 40px;">
+                    </a>
+                    <ul class="navigation-abhishyandh-N hide-abhishyandh-N">
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>
+                            <button>
+                                Services
+                                <svg opacity="0.5" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-chevron-down HeaderMenu-icon ml-1">
+                                    <path d="M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z"></path>
+                                </svg>
+                            </button>
+                            <div class="dropdown-abhishyandh-N">
+                                <ul class="list-items-with-description-abhishyandh-N" style="color: white;">
+                                    <li>
+                                        <svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" class="octicon octicon-workflow color-fg-subtle mr-3">
+                                            <path d="M1 3a2 2 0 0 1 2-2h6.5a2 2 0 0 1 2 2v6.5a2 2 0 0 1-2 2H7v4.063C7 16.355 7.644 17 8.438 17H12.5v-2.5a2 2 0 0 1 2-2H21a2 2 0 0 1 2 2V21a2 2 0 0 1-2 2h-6.5a2 2 0 0 1-2-2v-2.5H8.437A2.939 2.939 0 0 1 5.5 15.562V11.5H3a2 2 0 0 1-2-2Zm2-.5a.5.5 0 0 0-.5.5v6.5a.5.5 0 0 0 .5.5h6.5a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5ZM14.5 14a.5.5 0 0 0-.5.5V21a.5.5 0 0 0 .5.5H21a.5.5 0 0 0 .5-.5v-6.5a.5.5 0 0 0-.5-.5Z"></path>
+                                        </svg>
+                                        <div class="item-title-abhishyandh-N">
+                                            <h3 style="color: black;">IT SERVICES</h3>
+                                            <p style="color: blue;">We Design and Develop your Dream Website</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" class="octicon octicon-package color-fg-subtle mr-3">
+                                            <path d="M12.876.64V.639l8.25 4.763c.541.313.875.89.875 1.515v9.525a1.75 1.75 0 0 1-.875 1.516l-8.25 4.762a1.748 1.748 0 0 1-1.75 0l-8.25-4.763a1.75 1.75 0 0 1-.875-1.515V6.917c0-.625.334-1.202.875-1.515L11.126.64a1.748 1.748 0 0 1 1.75 0Zm-1 1.298L4.251 6.34l7.75 4.474 7.75-4.474-7.625-4.402a.248.248 0 0 0-.25 0Zm.875 19.123 7.625-4.402a.25.25 0 0 0 .125-.216V7.639l-7.75 4.474ZM3.501 7.64v8.803c0 .09.048.172.125.216l7.625 4.402v-8.947Z"></path>
+                                        </svg>
+                                        <div class="item-title-abhishyandh-N" style="color: black;">
+                                            <h3 style="color: black;">HR SERVICES</h3>
+                                            <p style="color: blue;">Empowering Your Business with Exceptional HR Solutions</p>
+                                            
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" class="octicon octicon-shield-check color-fg-subtle mr-3">
+                                            <path d="M16.53 9.78a.75.75 0 0 0-1.06-1.06L11 13.19l-1.97-1.97a.75.75 0 0 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0l5-5Z"></path><path d="m12.54.637 8.25 2.675A1.75 1.75 0 0 1 22 4.976V10c0 6.19-3.771 10.704-9.401 12.83a1.704 1.704 0 0 1-1.198 0C5.77 20.705 2 16.19 2 10V4.976c0-.758.489-1.43 1.21-1.664L11.46.637a1.748 1.748 0 0 1 1.08 0Zm-.617 1.426-8.25 2.676a.249.249 0 0 0-.173.237V10c0 5.46 3.28 9.483 8.43 11.426a.199.199 0 0 0 .14 0C17.22 19.483 20.5 15.461 20.5 10V4.976a.25.25 0 0 0-.173-.237l-8.25-2.676a.253.253 0 0 0-.154 0Z"></path>
+                                        </svg>
+                                        <div class="item-title-abhishyandh-N" style="color: black;">
+                                            <h3 style="color: black;">BPO SERVICES</h3>
+                                            <p style="color: blue;">Streamline Your Success with Our Expert BPO Services: Efficiency, Excellence, and Innovation at Every Step</p>
+                                        </div>
+                                    </li>
+                                     
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <button>
+                                Capabilities
+                                <svg opacity="0.5" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-chevron-down HeaderMenu-icon ml-1">
+                                    <path d="M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z"></path>
+                                </svg>
+                            </button>
+                            <div class="dropdown-abhishyandh-N">
+                                <h3>Our Services</h3>
+                                <ul class="list-menu-items-abhishyandh-N">
+                                    <li>
+                                        <a href="#">
+                                            Web Development
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Java Development
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Python Development
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        Support Projects
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <button>
+                                Portfolio
+                                <svg opacity="0.5" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-chevron-down HeaderMenu-icon ml-1">
+                                    <path d="M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z"></path>
+                                </svg>
+                            </button>
+                            <div class="dropdown-abhishyandh-N">
+                                <h3>Projects</h3>
+                                <ul class="list-menu-items-abhishyandh-N">
+                                    <li>
+                                        <a href="#topics">
+                                            E-Commerce
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#trending">
+                                        Hospital Management
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#collections">
+                                            Banking
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a
+                                href="#">
+                                Careers
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                 
+                <button class="burger-menu-abhishyandh-N">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M4 6l16 0"></path>
+                        <path d="M4 12l16 0"></path>
+                        <path d="M4 18l16 0"></path>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+
+
+ <!----------------------------------------------------Navbar ends here---------------------------------------------------------------->
+
+
+ <div class="Background-abhishyandh-Background">
+    <div class="something">
+<h1 style="color: white;">A</h1>
+
+    </div>
+ <img src="background-Abhishyandh.png" alt="Abhishyandh background" style="width: 1520px;">
+ </div>
+ 
+ 
+         <!-----------------About section Here ------------------>
+         <section class="About">
+            <div class="container-abhishyandh">
+        <h1 class="h1-abhishyandh" style="font-weight: bold;">About Abhishyandh</h1>
+        <div class="about-content-abhishyandh">
+            <div class="about-text-abhishyandh">
+                <p>Welcome to Abhishyandh! Abhishyandh Global Solutions stands at the forefront of innovation, providing outstanding IT, HR, and BPO services. Their commitment to excellence propels businesses toward success, leveraging creativity and operational efficiency. With a relentless focus on client satisfaction and transformative IT solutions, they aspire to be a premier global partner.
+We believe in fostering a culture of creativity, collaboration, and continuous learning.We are a passionate team dedicated to delivering high-quality solutions to our clients. With years of experience in the industry, we strive to innovate and exceed expectations in everything we do.</p>
+                <p>Our mission is to create value for our customers through cutting-edge technology and exceptional service. We believe in fostering a</p>
+            </div>
+            <div class="about-image-abhishyandh">
+                <img src="https://via.placeholder.com/400x300" alt="abhishyandh">
+            </div>
+        </div>
+    </div>
+            </section>
+            <!--About section complete Here----------------->
+
+            <!----------------------------------------Services section------------------------------------------------------>
+            <center><h1 style="font-weight: bold;">Our Services</h1></center>
+            <div class="capabilities" style="padding: 20px;"></div>
+                <section class="services-section-abhishyandh-s">
+         
+        <div class="container-wrapper-abhishyandh-s">
+            <div class="container-abhishyandh-s">
+                <img src="https://via.placeholder.com/150" alt="Service 1">
+                <h2>IT SERVICES</h2>
+                <hr>
+                <p>IT services encompass consulting, managed services, cloud computing, cybersecurity, software development, support, and training optimize business technology and security</p>
+            </div>
+            <div class="container-abhishyandh-s">
+                <img src="https://via.placeholder.com/150" alt="Service 2">
+                <h2>HR SERVICES</h2>
+                <hr>
+                <p>We unlock human potential through strategic talent acquisition, comprehensive employee engagement, and innovative organizational development.</p>
+            </div>
+            <div class="container-abhishyandh-s">
+                <img src="https://via.placeholder.com/150" alt="Service 3">
+                <h2>BPO SERVICES</h2>
+                <hr>
+                <p>BPO services involve outsourcing non-core business functions such as customer support, HR, finance, and IT to third-party providers, enhancing efficiency and cost-effectiveness..</p>
+            </div>
+        </div>
+    </section>
+            <!------------------------------------------Services section ended---------------------------------------->
+         
+<!-----------------------------------------------Our Capabilities Section starts Here----------------------------------------->
+<div class="capabilities" style="padding: 50px;">
+    <center><h1 style="font-weight: bold;">We are Capable </h1></center> 
+ </div>
+ <section id="about" class="about-abhishyandh">
+    <div class="containerr" data-aos="fade-up">
+        <div class="section-title">
+             
+            <div class="capabilities" style="padding: 20px;"></div>
+        </div>
+        <div class="flex-container123-abhishyandh-c">
+          <div class="main-flex-box123-abhishyandh-c">
+            <img src= "" alt="Image">
+            <h2 style="color: black; font-family: 'Times New Roman', Times, serif;">Web Development</h2>
+            <b><p style="color: grey;">We have a team of Web Developers with execellent designing and developing capabilities and they are Specialized in front-end design to create intuitive with engaging user interfaces, with Frameworks and libraries </p></b>
+             
+          </div>
+         
+        <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+          <div class="main-flex-box123-abhishyandh-c">
+            <img src="" alt="Image">
+            <h2 style="color: black;font-family: 'Times New Roman', Times, serif;">Java Development</h2>
+            <b><p style="color: grey; ">We have a team of Full Stack Java Developers with execellent coding capabilities,they are specialized and trainied on back-end,server-related technologies, including Frameworks, ORM's, Data Management related technologies and Testing Tools. </p></b>
+             
+          </div>
+          <div class="main-flex-box123-abhishyandh-c">
+            <img src="" alt="Image">
+            <h2 style="color: black;font-family: 'Times New Roman', Times, serif;">Python Development</h2>
+            <b><p style="color: grey;">We have a team of Pyhton Developers with execellent AI based solutions capabilitiesand  they are specialized and trained on back-end and server-related technologies, including Frameworks and AI based solutions.</p></b>
+             
+          </div>
+          <div class="main-flex-box123-abhishyandh-c">
+            <img src="" alt="Image">
+            <h2 style="color: black;font-family: 'Times New Roman', Times, serif;">Mobile Development</h2>
+            <b><p style="color: grey;">We have a team of Mobile Developers with execellent mobile app designing tools and technolgies and they are Focused on mobile application and web application building technologies.</p></b>
+             
+          </div>
+          <div class="main-flex-box123-abhishyandh-c">
+            <img src="" alt="Image">
+            <h2 style="color: black;font-family: 'Times New Roman', Times, serif;">IT Trainings</h2>
+            <b><p style="color: grey;">We empower the next generation of tech innovators through our comprehensive IT training programs.Our cutting-edge curriculum covers Full Stack Java.Full Stack Pyton,Dot Net Full Stack , Power BI, AI/ML.</p></b>
+             
+          </div>
+          <div class="main-flex-box123-abhishyandh-c">
+            <img src="" alt="Image">
+            <h2 style="color: black;font-family: 'Times New Roman', Times, serif;">Internships</h2>
+           <b> <p style="color: grey;">We offer transformative internship opportunities that serve as a launchpad for aspiring tech professionals. Our immersive programs provide hands-on experience in Building Real-time Projects.</p></b>
+             
+          </div> 
+        </div>
+        </div>
+        </section>
+        <div class="capabilities" style="padding: 30px;">
+
+        </div>
+
+<!-----------------------------------------------Our Capabilities Section ends Here----------------------------------------->
+
+<!----------------------------------------Contact Us starts here----------------------------------->
+<div class="padding">
+    <center><h1 style="font-weight: bold;">Contact Us</h1></center>
+</div>
+<section>
+    <div class="padding" style="padding: 50px;">
+    <div class="container-abhishyandh-con">
+      <div class="left-side">
+        <h1>Contact Abhishyandh</h1>
+        <p>Drop us a message and we'll get back to you.</p>
+        <form>
+          <div class="form-group">
+            <div class="form-row">
+              <div>
+                <label for="name">Full Name</label>
+                <input type="text" class="underline-input" placeholder="Enter Your Name">
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input type="text" class="underline-input" placeholder="Enter Your Email">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-row">
+              <div>
+                <label for="phone">Phone</label>
+                <input type="text" class="underline-input" placeholder="Enter Your Phone">
+              </div>
+              <div>
+                <label for="subject">Subject</label>
+                <input type="text" class="underline-input" placeholder="Enter Your Subject">
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="platform">Select Development</label>
+            <select id="platform">
+              <option value="web development">Web Development</option>
+              <option value="Java development">Java Development</option>
+              <option value="Python Development">Python Development</option>
+              <option value="Mobile Development">Mobile Development</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Hi, do you have a moment to talk.." style="width: 100%; height: 100px;"></textarea>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+      <div class="right-side">
+        <h2>Reach Us</h2>
+        <ul>
+           <i class="fas fa-envelope"></i> hr@abhishyandh.co.in
+          <br>
+          <br>
+          <br>
+          <i class="fas fa-phone-alt"></i> +91 8897830910 (10 : 30am - 7 : 30pm IST)
+          <br>
+          <br>
+          <br>
+          <i class="fas fa-map-marker-alt"></i> Abhishyandh Global Solutions Pvt Ltd .<br>Aditya Enclave, Nilgiri Block, 6th Floor, 605A, Beside Ameerpet Metro Station, Ameerpet- Hyderabad.<br>Telangana<br>India-500038.
+        </ul>
+      </div>
+    </div>
+    </div>
+    </section>
+<!----------------------------------------Contact Us ends here----------------------------------->
+
+
+    <!------------------------FOOTER SECTION -------------------------->
+    <section> 
+    <div class="dummy_page">
+     <h3 style="color: white;">Abhishyandh Global Solutions Pvt Ltd</h3>
+    </div>
+    <!--Footer Start-->
+    <div class="footer">
+        <div class="contain">
+            <div class="col">
+                <h1 style="color: black;">Our Comapany</h1>
+                <ul class="abhishyandh-f">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>IT Services</li>
+                    <li>Hr Services</li>
+                    <li>BPO Services</li>
+                    <li>Get In Touch</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1 style="color: black;">We Develop</h1>
+                <ul>
+                    <li>Web Development</li>
+                    <li>Java Development</li>
+                    <li>Python Development</li>
+                    <li>Mobile Development</li>
+                    <li>Get In Touch</li>
+                    
+                </ul>
+            </div>
+            <div class="col">
+                <h1 style="color: black;">Contact ABS</h1>
+                <ul>
+                    <li>+91 8897830910</li>
+                    <li>040-6685-8189</li>
+                    <li>info@abhishyandh.co.in</li>
+                    <li>https://abhishyandh.co.in</li>
+                    <li>Get in touch</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1 style="color: black;">Support</h1>
+                <ul>
+                    <li>Web Mails</li>
+                    <li>hr@abhishyandh.co.in</li>
+                    <li>info@abhishyandh.co.in</li>
+                    <li>Get In Touch</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1 style="color: black;">Resources</h1>
+                <ul>
+                    <li>LinkedIn</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                    <li>FaceBook</li>
+                    <li>Get In Touch</li>
+                </ul>
+            </div>
+                 <div class="col">
+                <h1 style="color: black;">Follow Us On</h1>
+                <ul>
+                    <p class="social-media">
+                        <a href="https://www.linkedin.com/company/abhishyandh-global-solutions/"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                        <a href="https://github.com/AbhiFlash-Coder"><i class="bi bi-github text-dark-mx-1"></i></a>
+                        <a href=""><i class="bi bi-twitter text-dark mx-1"></i></a>
+                        <a href="https://www.facebook.com/share/BxpiEC8qP9PP6ycj/?mibextid=qi2Omg"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                        <a href="https://www.instagram.com/abhishyandh?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="bi bi-instagram text-dark mx-1"></i></a>
+                        <a href-""><i class="bi bi-youtube text-dark mx-1"></i></a>
+                      
+                    </p>  
+                </ul>
+            <div class="clearfix">
+                 
+        </div>
+         
+    </div>
+    </div>
+    </div>
+    </section>
+    <!----footer completed-->
+     <!------------------copy rigth started--------------------->
+     <div class="copyright-abhishyandh">
+        <p>&copy; 2023 Abhishyandh. All rights reserved.</p>
+    </div>
+    <!----------------------COMPLETED WEBSITE--------------------------------->
+     
+
+     
+    <script>
+        
+
+
+
+        </script>
+    </body>
+
+</html>

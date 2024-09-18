@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four Containers with Images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+        }
+        .container-ser {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .item-ser {
+            flex: 1;
+            text-align: center;
+        }
+        .image-container {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            box-shadow: 0 0 8px;
+          }
+        p {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-ser">
+        <div class="item-ser">
+            <div class="image-container" style="background-image: url('BPOVOICE.jpg');"></div>
+            <p>VOICE PROCESS</p>
+        </div>
+        <div class="item-ser">
+            <div class="image-container" style="background-image: url('BPONONVOICE.jpg');"></div>
+            <p>NON VOICE PROCESS</p>
+        </div>
+        <div class="item-ser">
+            <div class="image-container" style="background-image: url('chatprocess.webp');"></div>
+            <p>CHAT PROCESS</p>
+        </div>
+        <div class="item-ser">
+            <div class="image-container" style="background-image: url('emailprocess.jpg');"></div>
+            <p>EMAIL PROCESS</p>
+        </div>
+    </div>
+</body>
+</html>
