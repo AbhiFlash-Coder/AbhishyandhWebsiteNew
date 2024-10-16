@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BackGround Verification</title>
+    <link rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="A-images/logo.jpg"  href="A-images/logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+
+    <style>
+			html,body{
+		scroll-behavior: smooth;
+		overflow-x: hidden;
+		max-width: 100%;
+	}
+
+body {
+font-family: "Red Hat Display", sans-serif;
+font-size: 16px;
+cursor: pointer;
+}
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+ 
+.fixed-top {
+    background-color: white;  
+    transition: all 0.3s ease;
+    z-index: 1000;  
+}
+
+.shadow {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  
+}
+
+ @media (max-width:768px){
+     
+body {
+    padding-top: 60px; 
+} 
+ }
+		
+ 
+
+/*starts here*/
+.background-verify {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-family: 'Times New Roman', Times, serif; 
+        }
+        h2 {
+            color: #3498db;
+            margin-top: 30px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p {
+            margin-bottom: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+
+
+        @media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        margin-top: 20px;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+}
+
+.benefits {
+    width: 100%;
+    height: auto;  
+    background-color: lightgray;
+    text-align: center;
+}
+
+.benefits h3 {
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px 0;
+}
+
+.text-content h5 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .padding {
+        padding: 20px;
+    }
+
+    .benefits h3 {
+        font-size: 1.5em;
+    }
+
+    .text-content h5 {
+        font-size: 1em;
+    }
+ 
+
+}
+
+
+        .container-back {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .bottom-container {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .image-container {
+            flex: 1;
+            text-align: right;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        .check-mark::before {
+            content: "✓";
+            color: green;
+            margin-right: 10px;
+        }
+        .button {
+            background-color: maroon;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+ 
+ /*footer*/
+.body-footer {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background: #1C1C1C;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+ 
+
+/*? footer containers */
+footer {
+    position: relative;
+    bottom: 0;
+    background: #161616;
+    width: 100%;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+ 
+
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 64rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    
+    box-sizing: border-box;
+}
+
+.footer-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 4rem;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+}
+
+.footer-logo-column {
+    padding-right: 10%;
+}
+
+.footer-logo {
+    margin-bottom: 1.5rem;
+    width: 14rem;
+}
+
+ 
+.social-wrapper {
+    display: flex;
+    gap: 0.5rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.social-links {
+    display: inline-flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.social-links a {
+    color: #7E7E7E;
+    text-decoration: none;
+}
+
+.social-links svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    stroke: #7E7E7E;
+    transition: all 0.2s 
+        ease-in-out;
+}
+
+.social-links svg:hover {
+    stroke: #F9F9F9;
+}
+
+.social-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    list-style-type: none;
+}
+
+ 
+.link-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    flex-grow: 1;
+}
+
+.link-columns>div {
+    flex-grow: 1;
+    display: flex;
+    gap: 2rem;
+}
+
+.link-columns>div>section {
+    min-width: 8rem;
+    width: 50%;
+}
+
+.link-columns ul {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    font-weight: 600;
+}
+
+.link-columns ul a {
+    color:  #7E7E7E;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.link-columns ul a:hover {
+    color: #F9F9F9;
+}
+
+.link-columns h3 {
+    color: #F9F9F9;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+ 
+.footer-bottom {
+    margin-top: 8rem;
+    width: 100%;
+    color:  #7E7E7E;
+}
+
+.footer-bottom-wrapper {
+    max-width:  64rem;
+    margin: 0 auto;
+    width: 100%;
+    padding: 2.5rem 1rem;
+    border-top: 1px solid 
+         #3E3E3E;
+}
+
+.footer-bottom small {
+    font-size: 1rem;
+    display: inline;
+    white-space: nowrap;
+}
+
+.footer-bottom>small {
+    font-size: 1rem;
+    width: 100%
+}
+
+ 
+.h1-follow h1{
+    color: white; 
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.Heading-Abhishyandh{
+    width: 100%;
+    height: 100px;
+    background-color: #3ECF8E;
+}
+.Heading-Abhishyandh h2{
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 20px;
+}
+
+
+
+/*whatsapp integration*/
+.whatsapp-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .whatsapp-icon i {
+            color: white;
+            font-size: 30px;
+        }
+
+        /* Popup container */
+        .popup {
+            display: none;
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            padding: 20px;
+        }
+
+        .popup-header {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .popup-body {
+            margin-bottom: 20px;
+        }
+
+        .popup-body textarea {
+            width: 100%;
+            height: 80px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            font-size: 14px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        .popup-footer {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .popup-footer button {
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .send-button {
+            background-color: #25D366;
+        }
+
+        .chat-button {
+            background-color: #007BFF;
+        }
+
+        .whatsapp-icon:hover, .send-button:hover, .chat-button:hover {
+            opacity: 0.8;
+        }
+.container-back-bv {
+    padding: 20px;
+}
+
+.bottom-container-bv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.bottom-container-content-bv {
+    padding: 20px;
+    text-align: center;
+}
+
+.image-container-bv img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.benefits-bv {
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+@media (min-width: 768px) {
+    .bottom-container-bv {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .bottom-container-content-bv, .image-container-bv {
+        width: 48%; /* Adjust widths for larger screens */
+    }
+}
+
+@media (max-width: 767px) {
+    .bottom-container-bv {
+        flex-direction: column;
+    }
+
+    .bottom-container-content-bv, .image-container-bv {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="A-images/logo.jpg" style="width: 50px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html" style="color: #122f47;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="AboutAbhishyandh.html" style="color: #122f47;">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #122f47;">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="IT SERVICES.html">IT Services</a></li>
+                            <li><a class="dropdown-item" href="ITTRAININGSPAGE.html">IT Trainings</a></li>
+                            <li><a class="dropdown-item" href="HRSERVICES.html">HR Services</a></li>
+                            <li><a class="dropdown-item" href="BPOSERVICES.html">BPO Services</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #122f47;">
+                            Capabilities
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="IT SERVICES.html">Web Development</a></li>
+                            <li><a class="dropdown-item" href="IT SERVICES.html">Java Projects</a></li>
+                            <li><a class="dropdown-item" href="IT SERVICES.html">React Projects</a></li>
+                            <li><a class="dropdown-item" href="IT SERVICES.html">Support Projects</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #122f47;">
+                            Trainings
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="ITTRAININGSPAGE.html" style="color: maroon;">IT Trainings</a></li>
+                            <li><a class="dropdown-item" href="FullStackJavaCoursePage.html">Java Full Stack</a></li>
+                            <li><a class="dropdown-item" href="PythonFullStackCourse.html">Python Full Stack</a></li>
+                            <li><a class="dropdown-item" href="DOTNETCOURSE.html">Dot Net Full Stack</a></li>
+                            <li><a class="dropdown-item" href="PowerBI.html">Sisense BI</a></li>
+                            <li><a class="dropdown-item" href="AI.html">AI/ML</a></li>
+                            <li><a class="dropdown-item" href="ReactJs.html">React JS</a></li>
+                            <li><a class="dropdown-item" href="Angular.html">Angular</a></li>
+                            <li><a class="dropdown-item" href="Ionic.html">Ionic</a></li>
+                            <li><a class="dropdown-item" href="#" style="color: maroon;">Management</a></li>
+                            <li><a class="dropdown-item" href="Recruitment.html">Recruitment</a></li>
+                            <li><a class="dropdown-item" href="Resume Building.html">Resume Building</a></li>
+                            <li><a class="dropdown-item" href="BusinessDevelop.html">Business Development</a></li>
+                            <li><a class="dropdown-item" href="HROPERATIONS.html">HR Operations</a></li>
+                            <li><a class="dropdown-item" href="InterviewSkillsdevelopment.html">Interview Skills Development</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="LoginPage.html" style="color: maroon;">Register</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Careers-Abhishyandh.html" style="color: #122f47;">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#contact-form-page" style="color: #122f47;">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                     
+                     <button class="btn btn-outline-success" type="submit"><a href="LoginPage.html" style="text-decoration: none;">Register</a></button>
+                  </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+<!--Starts here-->
+<div class="padding" style="padding: 40px;"></div>
+
+    <div class="top-container">
+		<br>
+		<br>
+        <h1 style="font-weight: bold;">Thorough background checks: The essential of trust at Abhishyandh Global Solutions</h1>
+    </div>
+    
+    <div class="container-back-bv">
+    <div class="bottom-container-bv">
+        <div class="bottom-container-content-bv">
+            <h2>Benefits</h2>
+            <p>Instantly create & manage your process</p>
+            <p>Use AI to save time and move faster</p>
+            <p>Connect to your company's data & business systems</p>
+            <a href="index.html"><button class="button">Contact Abhishyandh</button></a>
+        </div>
+        <div class="image-container-bv">
+            <img src="A-images/backgroundverificationimage.jpg" alt="Abhishyandh Services">
+        </div>
+    </div>
+</div>
+
+ 
+
+
+    <div class="padding" style="padding: 30px;">
+        <div class="recruitment-down">
+            <center>
+                <h3 style="font-family: 'Times New Roman', Times, serif; font-weight: bold;">Benefits and Advantages</h3>
+            </center>
+            <div class="padding" style="padding: 10px;"></div>
+
+            <div class="background-verify">
+                <div class="container">
+                    <h1>Understanding Background Verification</h1>
+
+                    <h2>What is Background Verification?</h2>
+                    <p>
+                        Background verification is a process used by employers to check the accuracy of a candidate's claims about their background, qualifications, and experience. This process helps ensure that the information provided by potential employees is truthful and complete.
+                    </p>
+
+                    <h2>Importance of Background Checks</h2>
+                    <p>
+                        Background checks are crucial for maintaining workplace safety, reducing the risk of negligent hiring claims, and ensuring that candidates possess the qualifications they claim. They help companies make informed decisions about their hires and protect their reputation.
+                    </p>
+
+                    <h2>Common Elements of Background Verification</h2>
+                    <p>
+                        A comprehensive background check may include verification of employment history, educational qualifications, criminal records, credit history, and professional licenses. Some checks may also involve drug testing or social media screening, depending on the nature of the job.
+                    </p>
+
+                     
+
+                    <h2>The Future of Background Verification</h2>
+                    <p>
+                        As technology advances, background verification processes are becoming more sophisticated. AI and machine learning are being incorporated to streamline checks and improve accuracy. However, it's crucial to balance thorough verification with respect for privacy and fairness in hiring practices.
+                    </p>
+
+                    <h2>Criminal History Check</h2>
+                    <p>
+                        Employers verify if a candidate has any criminal convictions. This helps ensure workplace safety and security.
+                    </p>
+
+                    <h2>Education Verification</h2>
+                    <p>
+                        Confirming educational qualifications (degrees, certifications) listed on the resume. Validating institutions attended, graduation dates, and majors.
+                    </p>
+
+                    <h2>Reference History Check</h2>
+                    <p>
+                        Contacting provided references to assess the candidate’s character, work ethic, and performance.
+                    </p>
+
+                    <h2>Credit History Check</h2>
+                    <p>
+                        Some roles (e.g., finance) require credit checks to evaluate financial responsibility. Think of licenses as the official stamps of approval from regulatory bodies. They grant you permission to practice in specific fields.
+                    </p>
+
+                    <h2>Social Media Screening</h2>
+                    <p>
+                        Reviewing public social media profiles for inappropriate content or red flags.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+<!-- Footer Section -->
+ <div class="padding" style="padding: 30px;"></div>
+
+    
+
+    <div class="body-footer">
+ 
+        <footer>
+            <div class="footer-wrapper">
+                <div class="footer-columns">
+                    <div class="footer-logo-column">
+                         
+                         
+                         
+                    </div>
+                    <div class="link-columns">
+                        <div>
+                             <section>
+                        <h3>Our Company</h3>
+                        <ul>
+                           <li><a href="index.html">Home</a></li>
+                                <li><a href="AboutAbhishyandh.html">About</a></li>
+                                <li><a href="IT SERVICES.html">Services</a></li>
+                                <li><a href="IT SERVICES.html">Capabilities</a></li>
+                                <li><a href="ITTRAININGSPAGE.html">Trainings</a></li>
+                                <li><a href="Careers-Abhishyandh.html">Careers</a></li>
+                                <li><a href="index.html">Contact Us</a></li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>Resources</h3>
+                        <ul>
+                             <li><a href="IT SERVICES.html">Web Projects</a></li>
+                                <li><a href="IT SERVICES.html">Java Projects</a></li>
+                                <li><a href="IT SERVICES.html">Python Projects</a></li>
+                                <li><a href="IT SERVICES.html">Support Projects</a></li>
+                                <li><a href="ITTRAININGSPAGE.html">IT Trainings</a></li>
+                                <li><a href="HRSERVICES.html">HR Services</a></li>
+                                <li><a href="BPOSERVICES.html">BPO Services</a></li>
+                        </ul>
+                    </section>
+                </div>
+                <div>
+                    <section>
+                        <h3>Technologies</h3>
+                        <ul>
+                            <li><a href="IT SERVICES.html">Java Developers</a></li>
+                                <li><a href="IT SERVICES.html">React Js Developers</a></li>
+                                <li><a href="IT SERVICES.html">Web Developers</a></li>
+                                <li><a href="IT SERVICES.html">Mobile Application Developers</a></li>
+                                <li><a href="IT SERVICES.html">Full Stack Java Developers</a></li>
+                                <li><a href="IT SERVICES.html">Mern Stack Developers</a></li>
+                                <li><a href="IT SERVICES.html">Full Stack Python Developers</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Reach us</h3>
+                        <ul>
+                           <li><a href="index.html">+91 8897830910</a></li>
+                                <li><a href="index.html">040-6685-8189</a></li>
+                                <li><a href="mailto:info@abhishyandh.co.in" title="Careers">info@abhishyandh.co.in</a></li>
+                                <li><a href="mailto:hr@abhishyandh.co.in" title="Company">hr@abhishyandh.co.in</a></li>
+                                 <li><a href="mailto:career@abhishyandh.co.in" title="Company">career@abhishyandh.co.in</a></li>
+                                <li><a href="index.html">Get in Touch</a></li>
+                        </ul>
+                    </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="h1-follow">
+                <center><h1>Follow Us</h1></center>
+             </div>
+            <div class="social-wrapper">
+                             
+                <div class='social-links'>
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/company/abhishyandh-global-solutions/" target="_blank" title="linkedin">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-linkedin" viewBox="0 0 16 16">
+        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+        </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/AbhiFlash-Coder" target="_blank" title="GitHub">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+        </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a  href="https://www.instagram.com/abhishyandh?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" title="Instagram">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="maroon" class="bi bi-instagram" viewBox="0 0 16 16">
+        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+        </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/share/BxpiEC8qP9PP6ycj/?mibextid=qi2Omg" title="Facebook">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-facebook" viewBox="0 0 16 16">
+        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+        </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- bottom part section -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-wrapper">
+                    <small>© <span id="year"></span> Abhishayndh Global Solutions.</small>
+                </div>
+            </div>
+        </footer>
+        </div>
+<!--whatsapp integration-->
+ <!-- WhatsApp Icon -->
+ <div class="whatsapp-icon" id="whatsapp-icon">
+  <i class="fab fa-whatsapp"></i>
+</div>
+
+<!-- Popup -->
+<div class="popup" id="whatsapp-popup">
+  <div class="popup-header" style="color: orange;">Contact Abhishyandh</div>
+  <div class="popup-body">
+      <p style="color: green;">Feel free to send us a message below or chat directly with us on WhatsApp:</p>
+       
+  </div>
+  <div class="popup-footer">
+     
+      <a href="https://wa.me/918897830910?text=Hello%20Abhishyandh%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener noreferrer" class="whatsapp-button">
+             
+      <button class="chat-button" id="chat-with-abhi-button">Chat with Abhishyandh</button>
+      </a>
+  </div>
+</div>
+
+
+ 
+
+<script>
+    const whatsappIcon = document.getElementById('whatsapp-icon');
+    const popup = document.getElementById('whatsapp-popup');
+    const sendMessageButton = document.getElementById('send-message-button');
+    const chatWithAbhiButton = document.getElementById('chat-with-abhi-button');
+    const messageInput = document.getElementById('message-input');
+    
+    // Toggle popup visibility
+    whatsappIcon.addEventListener('click', (event) => {
+        popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
+        event.stopPropagation();  
+    });
+
+    // Send message button click
+    sendMessageButton.addEventListener('click', () => {
+        const message = encodeURIComponent(messageInput.value.trim());
+        if (message) {
+            const url = `https://wa.me/8897830910?text=${message}`;
+            window.open(url, '_blank');
+            messageInput.value = '';  
+        } else {
+            alert('Please enter a message.');
+        }
+    });
+
+    // Chat with Abhishyandh button click
+    chatWithAbhiButton.addEventListener('click', () => {
+        const prefilledMessage = encodeURIComponent('May I know more about this?');
+        const url = `https://wa.me/8897830910?text=${prefilledMessage}`;
+        window.open(url, '_blank');
+    });
+
+    // Close popup when clicking outside
+    document.addEventListener('click', (event) => {
+        if (!popup.contains(event.target) && !whatsappIcon.contains(event.target)) {
+            popup.style.display = 'none';
+        }
+    });
+</script>
+<script>
+  const burgerMenu = document.querySelector('.burger-menu');
+const navigation = document.querySelector('.navigation');
+
+burgerMenu.addEventListener('click', () => {
+    navigation.classList.toggle('active');
+});
+
+// Add event listeners to dropdown buttons
+const dropdownButtons = document.querySelectorAll('.navigation > li > button');
+dropdownButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+        const parentLi = e.currentTarget.parentElement;
+        parentLi.classList.toggle('active'); // Toggle active class for dropdown
+        
+        // Close other dropdowns
+        dropdownButtons.forEach(otherButton => {
+            if (otherButton !== button) {
+                otherButton.parentElement.classList.remove('active'); // Close other dropdowns
+            }
+        });
+        
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', (event) => {
+            if (!parentLi.contains(event.target) && !button.contains(event.target)) {
+                parentLi.classList.remove('active');
+            }
+        });
+    });
+});
+
+// Toggle dropdown on clicking the arrow/button
+const dropdownIcons = document.querySelectorAll('.navigation > li > button svg');
+dropdownIcons.forEach(icon => {
+    icon.addEventListener('click', (e) => {
+        e.stopPropagation(); // Prevent the click event from bubbling up
+        const parentLi = e.currentTarget.closest('li');
+        parentLi.classList.toggle('active'); // Toggle dropdown visibility
+    });
+});
+ 
+
+</script>
+</body>
+</html>

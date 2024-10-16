@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title text="pagetitle">Sisense BI</title>
+   <link rel="stylesheet" href="css/styles.css"/>
+   <link rel="icon" type="image/png" href="A-images/logo.jpg">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+	html,body{
+		scroll-behavior: smooth;
+		overflow-x: hidden;
+		max-width: 100%;
+	}
+     .topnav {
+  overflow: hidden;
+  background-color: white;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: maroon;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+.topnav-left {
+  float: left;
+  display: flex;
+  align-items: center;
+}
+.topnav-left img {
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+.contact-info {
+  display: flex;
+  align-items: center;
+}
+
+.contact-button-h {
+  background-color: maroon;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.contact-button-h:hover{
+	background-color: #122f47;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+
+/* Style the content */
+.content-box {
+  background-color: maroon;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.content-box a {
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px;
+  position: relative;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 8px;
+  padding: 10px 0;
+   
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color: #000080;
+}
+ 
+.content h2 {
+  color: #000080;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.content p {
+  color: #000080;
+  text-align: center;
+  font-size: 18px;
+}
+.content-box {
+  
+  padding: 10px;
+  text-align: center;
+   
+  width: 100%;
+}
+.content-box a {
+  color: #000080;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+}
+.content-box a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.content-box i {
+  font-size: 25px;
+  color: black;
+}
+.content-box-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.content-box-row-item {
+  background-color: maroon;
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-box-row-item i {
+  font-size: 20px;
+  color: white;
+  margin-right: 10px;
+}
+.content-box a{
+  color: white;
+   font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+}
+
+.social {
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+.social a {
+  padding: 0px 10px;
+}
+.social a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.social i {
+  font-size: 20px;
+  color: black;
+}
+.logo-a {
+  padding-top: 10px;
+}
+.login {
+  background-color: maroon;
+  border: none;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+}
+.login:hover {
+  background-color: #3e8e41;
+}
+.logo {
+  color: #000080;
+  text-align: center;
+  font-size: 20px;
+}
+.logo-slogan {
+  color: #000080;
+  text-align: center;
+  font-size: 12px;
+}
+/* Styles for mobile navbar */
+.topnav {
+    position: relative;
+}
+
+.menu-icon {
+    display: none; /* Hide menu icon by default */
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .topnav a, .topnav h3 {
+        display: none; /* Hide normal links in mobile view */
+    }
+    
+    .menu-icon {
+        display: block; /* Show burger menu */
+    }
+
+    .mobile-nav {
+        display: none; /* Hide mobile nav by default */
+        position: absolute;
+        background-color: white;
+        width: 100%;
+        z-index: 1000;
+        padding: 20px 0;
+    }
+
+    .mobile-nav a {
+        display: block;
+        padding: 10px 20px;
+        color: black;
+        text-align: left;
+    }
+
+    .mobile-nav .dropdown-content {
+        display: none; /* Hide dropdowns by default */
+    }
+
+    .mobile-nav .dropdown:hover .dropdown-content {
+        display: block; /* Show dropdown on hover */
+    }
+
+    .mobile-nav .dropdown {
+        position: relative;
+    }
+
+    .content-box {
+        background-color: maroon;
+        text-align: center;
+    }
+}
+ 
+ 
+/* /card trainings/ */
+.container-Training{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.card-Training {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #00aced;
+  border-radius: 10px;
+  padding: 20px;
+  width: 150px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.card-Training:hover{
+    transform: translateX(10px);
+}
+.card-Training svg {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.card-Training h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+
+ 
+
+/* /popup/ */
+.popup {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+  max-width: 400px;
+  width: 100%;
+  height: 320px;
+}
+
+.popup-content {
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: maroon;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.popup h2 {
+  color: maroon;
+  margin-bottom: 20px;
+}
+
+ 
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 999;
+}
+.container-path {
+  width: 350px;
+  height: 470px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.course-title-path {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.course-list-path {
+  margin-top: 20px;
+  margin-left: 20px;
+  list-style: none;
+  padding: 0;
+}
+.course-list-path li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.course-list-path li::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #00ff00;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.certificate {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+  margin-top: 20px;
+   
+  background-size: cover;
+  border-radius: 50%;
+}
+.certificate-text {
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+/* /Home Image/ */
+.hero-section {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .image-container {
+      position: relative;
+      width: 60%;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: auto;
+    }
+
+    .image-overlay {
+      position: absolute;
+      top: 10px;
+      left: 50px;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 300px;
+    }
+
+    .image-overlay h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
+      color: white;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .image-overlay p {
+      font-size: 16px;
+      color: white;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .java-info-container {
+      width: 35%;
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .java-info-container h3 {
+      color: maroon;
+      margin-bottom: 15px;
+    }
+
+    .java-info-container ul {
+      padding-left: 20px;
+    }
+
+    .java-info-container li {
+      margin-bottom: 10px;
+    }
+/* /download cirricullum/ */
+    .btn-cirricullum{
+      width: 300px;
+      height: 40px;
+      background-color: maroon;
+      color: white;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 6px;
+      border: 1px solid white;
+      box-shadow: 0 0 8px;
+    }
+    .btn-cirricullum:hover{
+      background-color: navy;
+      transform: translateY(10px);
+    }
+ 
+/* /card trainings/ */
+.container-Training{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.card-Training {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #00aced;
+  border-radius: 10px;
+  padding: 20px;
+  width: 150px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.card-Training:hover{
+    transform: translateX(10px);
+}
+.card-Training svg {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.card-Training h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+ 
+  
+
+/* /paragraph IT/ */
+.para-IT{
+  text-align: center;
+   font-size: 30wpx;
+    color: #ffffff;
+     margin-top: 10px;
+     font-family: 'Times New Roman', Times, serif;
+     font-weight: bold;
+}
+ /* /CourseInside/ */
+ .body-Course-Inside{
+  margin: 0;
+   
+  background-repeat: no-repeat;
+   background-size: 100% 100%;
+  font-family: Arial, sans-serif;
+   
+}
+
+.container-Course-Inside{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 50vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.text {
+  color: white;
+  text-align: left;
+}
+
+.button-container-Course {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.button-container-Course p{
+  color: white;
+}
+
+.button-Course {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+  
+
+ 
+  /* /Features of Trainings/ */
+  .container-IT-updates {
+            display: flex;
+            padding: 50px;
+            justify-content: center;
+            flex-wrap: wrap; 
+            background-color: #F3F4F9;
+        }
+        .card-IT {
+            width: 200px;
+            height: 450px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        .image-container-IT {
+            width: 100%;
+            height: 130px;
+            border-radius: 10px; 
+            overflow: hidden;  
+            border: 2px solid rgba(0, 0, 0, 0.1);  
+            margin-bottom: 10px; 
+        }
+        .image-container-IT img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;  
+        }
+        h3 {
+            margin: 10px 0;
+            color: maroon;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        p {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            color: gray;
+             
+        }
+        @media (max-width: 600px) {
+            .card-IT {
+                width: 100%;
+                max-width: 300px;  
+            }
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateX(50%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .card-IT.in-view {
+            animation: slideIn 1s forwards;
+        }
+        .features-Trainings{
+          text-align: center;
+          font-family: 'Times New Roman', Times, serif;
+          font-weight: bold;
+          font-size: 28px;
+        }
+        
+        
+ /* /Features of Trainings/ */
+  .container-IT-updates {
+            display: flex;
+            padding: 50px;
+            justify-content: center;
+            flex-wrap: wrap; 
+            background-color: #F3F4F9;
+        }
+        .card-IT {
+            width: 230px;
+            height: 600px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        .image-container-IT {
+            width: 100%;
+            height: 130px;
+            border-radius: 10px; 
+            overflow: hidden;  
+            border: 2px solid rgba(0, 0, 0, 0.1);  
+            margin-bottom: 10px; 
+        }
+        .image-container-IT img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;  
+        }
+        h3 {
+            margin: 10px 0;
+            color: maroon;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        p {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            color: gray;
+            font-size: 12px;
+             
+        }
+        @media (max-width: 600px) {
+            .card-IT {
+                width: 100%;
+                max-width: 300px;  
+            }
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateX(50%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .card-IT.in-view {
+            animation: slideIn 1s forwards;
+        }
+        .features-Trainings{
+          text-align: center;
+          font-family: 'Times New Roman', Times, serif;
+          font-weight: bold;
+          font-size: 28px;
+        }
+
+/* /footer/ */
+#footer {
+        background-color: #173F5F; /* Dark Blue */
+        padding: 20px 0;
+    }
+    .footer {
+        background-color: #F5F5F5; /* Light Grey */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .contain {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        max-width: 1200px; /* Max Width for Desktop */
+    }
+    .col {
+        flex: 1 1 200px; /* Flex Basis */
+        margin: 10px;
+        padding: 10px;
+    }
+    h1 {
+        color: #173F5F; /* Dark Blue */
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    li {
+        margin: 8px 0;
+        font-size: 1rem;
+    }
+    a {
+        color: black; /* Link Color */
+        text-decoration: none;
+        transition: color 0.3s ease; /* Smooth Transition */
+    }
+    a:hover {
+        color: #173F5F; /* Hover Color */
+        text-decoration: underline; /* Underline on Hover */
+    }
+    .social-media {
+        display: flex;
+        gap: 15px;
+        padding: 0;
+    }
+    .copyright-abhishyandh {
+        background-color: #173F5F;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+        .contain {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+
+/* /popup courses/ */
+.popup {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+  max-width: 400px;
+  width: 100%;
+  height: 320px;
+}
+
+.popup-content {
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: maroon;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.popup h2 {
+  color: maroon;
+  margin-bottom: 20px;
+}
+
+ 
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 999;
+}
+.container-path {
+  width: 350px;
+  height: 470px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.course-title-path {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.course-list-path {
+  margin-top: 20px;
+  margin-left: 20px;
+  list-style: none;
+  padding: 0;
+}
+.course-list-path li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.course-list-path li::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #00ff00;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.certificate {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+  margin-top: 20px;
+   
+  background-size: cover;
+  border-radius: 50%;
+}
+.certificate-text {
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+/* /whatsapp integration/ */
+.whatsapp-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .whatsapp-icon i {
+            color: white;
+            font-size: 30px;
+        }
+
+        /* Popup container */
+        .popup {
+            display: none;
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            padding: 20px;
+        }
+
+        .popup-header {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .popup-body {
+            margin-bottom: 20px;
+        }
+
+        .popup-body textarea {
+            width: 100%;
+            height: 80px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            font-size: 14px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        .popup-footer {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .popup-footer button {
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .send-button {
+            background-color: #25D366;
+        }
+
+        .chat-button {
+            background-color: #007BFF;
+        }
+
+        .whatsapp-icon:hover, .send-button:hover, .chat-button:hover {
+            opacity: 0.8;
+        }
+/* Mobile view: Adjust layout for screens less than 768px */
+@media screen and (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+    }
+
+    .image-container,
+    .java-info-container {
+        width: 100%;
+    }
+
+    .btn-cirricullum {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .container-Course-Inside {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text,
+    .button-container-Course {
+        width: 100%;
+    }
+
+    .card-Training {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Small mobile view: Adjust layout for screens less than 576px */
+@media screen and (max-width: 576px) {
+    .image-overlay h2 {
+        font-size: 1.5rem;
+    }
+
+    .container-IT-updates .card-IT {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .features-Trainings h2 {
+        font-size: 1.8rem;
+    }
+
+    .container-Course-Inside p {
+        font-size: 0.9rem;
+    }
+}
+
+</style>
+</head>
+<body>
+      <div class="topnav">
+    <div class="topnav-left">
+        <img src="A-images/logo.jpg" alt="Logo">
+    </div>
+    <h3 class="ittrainingscall">Contact for Course Enquiry: 
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+        </svg> 
+        <span class="ittrainingscall">+91 8897830910</span>
+    </h3>
+    <button class="contact-button-h">Login</button>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+</div>
+
+<div class="mobile-nav" id="mobileNav">
+    <div class="content-box">
+        <a href="index.html" style="color: white;">Home</a>
+        <a href="AboutAbhishyandh.html" style="color: white;">About Us</a>
+        <div class="dropdown">
+            <a style="color: white;">Courses Offering</a>
+            <div class="dropdown-content">
+                <a href="FullStackJavaCoursePage.html" style="color: black;">Full Stack Java</a>
+                <a href="PythonFullStackCourse.html" style="color: black;">Full Stack Python</a>
+                <a href="DOTNETCOURSE.html" style="color: black;">Dot Net</a>
+                <a href="PowerBI.html" style="color: black;">Sisense BI</a>
+                <a href="AI.html" style="color: black;">Artificial Intelligence / Machine Learning</a>
+                <a href="Angular.html" style="color: black;">Angular</a>
+                <a href="ReactJs.html" style="color: black;">ReactJs</a>
+                <a href="Ionic.html" style="color: black;">Ionic</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a style="color: white;">Trainings Benefits</a>
+            <div class="dropdown-content">
+                <a href="ITTRAININGSPAGE.html" style="color: black;">Training Certificate</a>
+                <a href="ITTRAININGSPAGE.html" style="color: black;">Placement Assistance</a>
+                <a href="ITTRAININGSPAGE.html" style="color: black;">Internship Program</a>
+                <a href="ITTRAININGSPAGE.html" style="color: black;">Real-Time Industry Projects</a>
+                <a href="ITTRAININGSPAGE.html" style="color: black;">Interview Preparation</a>
+            </div>
+        </div>
+        <a href="Careers-Abhishyandh.html" style="color: white;">Careers</a>
+        <a href="index.html" style="color: white;">Contact Us</a>
+    </div>
+</div>
+        
+        
+      <!--Course start--> 
+      <div class="hero-section">
+        <div class="image-container">
+            <img src="A-images/sisenseBIimagefront.jpg" alt="Java Course Image">
+            <a href="A-images/Power BI cirricullum.pdf" download="SenseBI Cirricullum">
+    <button class="btn-cirricullum" style="text-decoration: none;">Download Curriculum</button>
+</a>
+            <div class="image-overlay">
+                   
+            </div>
+        </div>
+        <div class="java-info-container">
+           <h3>Why Learn SisenseBI in 2024?</h3>
+      <ul>
+        <li><strong>Greater use of Job-Driven Decision-Making : </strong>  In an age of big data, organizations are leaning more on decisions driven by data in order to keep pace.</li>
+        <li><strong>Integration with Microsoft Ecosystem : </strong> BI software SisenseBI effortlessly integrates with other products like Excel, Azure and SQL Server of Microsoft. This is helps improved the work with data paths, that in turn simplifies importing and (or) transforming information from various sources – such as received logs or notifications.</li>
+        <li><strong>Easy to use Interface and Accessibility : </strong> Sisense BI provides a simple, intuitive interface that can be easily maneuvered by beginners as well as seasoned pros. The drag-and-drop feature combined with the friendly design offers fluid accessibility to any kind of user.</li>
+        <li><strong>Advanced Data Visualization Capabilities : </strong> Sisense BI brings together a host of visualization capabilities which aid in representing data in an understandable format. From basic charts and graphs Power BI visualizations range from simple tables and matrices to complex interactive dashboards to allow you identify trends, patterns, and insights.</li>
+         
+          <li><strong>InExpensive: </strong>  Sisense BI is an inexpensive tool for the data analysis and visualization prospective. This allows businesses to decide if they need the paid features, or are fine with the free ones.</li>  
+        <li><strong>Continuous Updates and Community Support : </strong>Microsoft continually updates It matters a lot in which Microsoft updates Power BI frequently with news features and changes while staying ahead of the curve regarding where business intelligence technology is and where it needs to go. </li>  
+        </ul>
+        </div>
+    </div>
+
+    <!-- Spacing -->
+    <div style="padding: 70px;"></div>
+
+    <div class="body-Course-Inside" style="background-image: url('A-images/sisenseBIimagebelow.jpg');">
+        <div class="container-Course-Inside">
+            <div class="text">
+                <h1>Power BI</h1>
+                <p style="color: white;">Live Course Free Preview Available</p>
+                <a href="index.html" style="text-decoration: none;">
+                    <button class="button-Course">Contact Us</button>
+                </a>
+            </div>
+            <div class="button-container-Course">
+                <p>Duration: 3 Months</p>
+                <p>Price: ₹10000</p>
+                <p>Rating: <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i></p>
+               
+                <a href="A-images/Power BI cirricullum.pdf" download="SisenseBi Cirricullum" style="text-decoration: none;"><button class="button-Course">Download Course Content</button></a>
+            </div>
+        </div>
+    </div>
+ 
+         
+
+        <div class="padding" style="padding: 30px;">
+</div>
+
+ 
+ 
+<!--features-->
+<div class="features-Trainings">
+    <h2 style="color: maroon; font-family: 'Times New Roman', Times, serif;font-weight: bold; font-size: 35px;">Our Training Features</h2>
+</div>
+<div class="container-IT-updates">
+    <!-- Expert Industry Trainers -->
+    <div class="card-IT">
+        <div class="image-container-IT">
+            <img src="A-images/enhancedsecurity.webp" alt="Expert Industry Trainers">
+        </div>
+        <h3 style="color: maroon; font-family: 'Times New Roman', Times, serif; font-size: 1rem;">Expert Industry Trainers</h3>
+        <p>
+            <span style="color: navy">Industry Experts:</span><span style="color: grey;"> Trainers with extensive industry experience and up-to-date knowledge of current technologies.<br></span>
+            <span style="color: navy;">Certifications:</span> <span style="color: grey;">Trainers often hold relevant industry certifications and qualifications.<br></span>
+            <span style="color: navy;">Personal Mentorship:</span><span style="color: grey;"> One-on-one mentorship and guidance to address individual learning needs.</span>
+        </p>
+    </div>
+
+    <!-- Comprehensive Curriculum -->
+    <div class="card-IT">
+        <div class="image-container-IT">
+            <img src="A-images/cirricullum.webp" alt="Comprehensive Curriculum">
+        </div>
+        <h3 style="color: maroon; font-family: 'Times New Roman', Times, serif; font-size: 1rem;">Comprehensive Curriculum</h3>
+        <p>
+            <span style="color: navy;">Latest Technologies:</span> <span style="color: grey;">Cover the latest technologies and industry trends, including emerging fields like AI, machine learning, and cloud computing.<br></span>
+            <span style="color: navy;">Structured Learning Path:</span><span style="color: grey;"> Well-defined learning paths from basic to advanced levels to ensure progressive learning.<br></span>
+            <span style="color: navy;">Hands-On Training:</span> <span style="color: grey;">Practical labs and real-world projects that reinforce theoretical concepts.</span>
+        </p>
+    </div>
+
+    <!-- Customized Training Approach -->
+    <div class="card-IT">
+        <div class="image-container-IT">
+            <img src="A-images/responsivesupport.jpeg" alt="Customized Training Approach">
+        </div>
+        <h3 style="color: maroon; font-family: 'Times New Roman', Times, serif; font-size: 1rem;">Customized Training Approach</h3>
+        <p>
+            <span style="color: navy;">Tailored Courses:</span><span style="color: grey;"> Customizable training programs based on the specific needs and goals of individuals or corporate clients.<br></span>
+            <span style="color: navy;">Skill-Based Training:</span> <span style="color: grey;">Focused training on specific skills or technologies relevant to current job market demands.</span>
+        </p>
+    </div>
+
+    <!-- Continuous Learning Updates -->
+    <div class="card-IT">
+        <div class="image-container-IT">
+            <img src="A-images/softwareupdate.jpeg" alt="Continuous Learning Updates">
+        </div>
+        <h3 style="color: maroon; font-family: 'Times New Roman', Times, serif; font-size: 1rem;">Continuous Learning Updates of IT Industry</h3>
+        <p>
+            <span style="color: navy">Ongoing Education:</span><span style="color: grey;"> Opportunities for continuous learning through updated course content and additional modules.<br></span>
+            <span style="color: navy">Drive Access:</span> <span style="color: grey;">Access to resources and updates even after course completion to keep skills current.</span>
+        </p>
+    </div>
+
+    <!-- Real World Projects -->
+    <div class="card-IT">
+        <div class="image-container-IT">
+            <img src="A-images/useeinterface.jpeg" alt="Real World Projects">
+        </div>
+        <h3 style="color: maroon; font-family: 'Times New Roman', Times, serif; font-size: 1rem;">Real World Projects</h3>
+        <p>
+            <span style="color: navy">Industry Projects:</span><span style="color: grey;"> Projects based on real-world problems to provide practical experience.<br></span>
+            <span style="color: navy">Collaborative Work:</span><span style="color: grey;"> Opportunities to work on team projects to simulate real-world working conditions.<br></span>
+            <span style="color: navy">Portfolio Development:</span><span style="color: grey;"> Building a portfolio of completed projects to showcase skills to potential employers.</span>
+        </p>
+    </div>
+</div>
+
+    
+
+    <!-- Footer Section -->
+     <div class="padding" style="padding: 30px;"></div>
+
+    <section> 
+        <div class="dummy_page" id="footer">
+            <h3 style="color: white;">Abhishyandh Global Solutions Pvt Ltd</h3>
+        </div>
+        <div class="footer">
+            <img src="A-images/logo.jpg" style="width: 100px; height: 100px;">
+            <div class="contain">
+                <div class="col">
+                <h1 style="color: black;">Our Company</h1>
+                <ul class="abhishyandh-f">
+                    <a href="index.html" style="text-decoration:none"><li>Home</li></a>
+                   <a href="AboutAbhishyandh.html" style="text-decoration:none"> <li>About</li></a>
+                    <a href="IT SERVICES.html" style="text-decoration:none"><li>Services</li></a>
+                    <a href="IT SERVICES.html" style="text-decoration:none"><li>IT Services</li></a>
+                    <a href="ITTRAININGSPAGE.html" style="text-decoration:none"><li>IT Trainings</li></a>
+                    <a href="HR SERVICES.html" style="text-decoration:none"><li>Hr Services</li></a>
+                    <a href="BPO SERVICES.html" style="text-decoration:none"><li>BPO Services</li></a>
+                    <a href="Careers-Abhishyandh.html" style="text-decoration:none"><li>Careers</li></a>
+                    <a href="index.html"><li>Get In Touch</li></a>
+                </ul>
+            </div>
+            <div class="col">
+                 
+                <h1 style="color: black;">We Develop</h1>
+                <ul>
+                    <a href="IT SERVICES.html" style="text-decoration:none"><li>Web Development</li></a>
+                   <a href="IT SERVICES.html" style="text-decoration:none"> <li>Java Development</li></a>
+                    <a href="IT SERVICES.html" style="text-decoration:none"><li>Python Development</li></a>
+                    <a href="IT SERVICES.html" style="text-decoration:none"><li>Mobile Development</li></a>
+                    <a href="index.html" style="text-decoration:none"><a href="index.html"><li>Get In Touch</li></a>
+                    
+                </ul>
+            </div>
+            <div class="col">
+                 
+                <h1 style="color: black;">Contact ABS</h1>
+                <ul>
+                    <li>+91 8897830910</li>
+                    <li>040-6685-8189</li>
+                    <li>info@abhishyandh.co.in</li>
+                    <li>https://abhishyandh.co.in</li>
+                    <a href="index.html"><li>Get In Touch</li></a>
+                </ul>
+            </div>
+            <div class="col">
+                 
+                <h1 style="color: black;">Support</h1>
+                <ul>
+                    <li>Web Mails</li>
+                    <li>hr@abhishyandh.co.in</li>
+                    <li>info@abhishyandh.co.in</li>
+                    <li>career@abhishyandh.co.in</li>
+                    <a href="index.html"><li>Get In Touch</li></a>
+                </ul>
+            </div>
+                     <div class="col">
+                        
+                    <h1 style="color: black;">Follow Us On</h1>
+                    <ul>
+                        <p class="social-media">
+                            <a href="https://www.linkedin.com/company/abhishyandh-global-solutions/"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                            <a href="https://github.com/AbhiFlash-Coder"><i class="bi bi-github text-dark-mx-1"></i></a>
+                            <a href=""><i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="https://www.facebook.com/share/BxpiEC8qP9PP6ycj/?mibextid=qi2Omg"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="https://www.instagram.com/abhishyandh?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="bi bi-instagram text-dark mx-1"></i></a>
+                    
+                        </p>  
+                    </ul>
+                <div class="clearfix">
+                     
+            </div>
+             
+        </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="copyright-abhishyandh">
+        <p>&copy; 2023 Abhishyandh. All rights reserved.</p>
+    </div>
+
+<div class="overlay" id="overlay"></div>
+<div class="popup" id="contactPopup">
+    <div class="container-path">
+        <button class="close-btn" onclick="closePopup()">&times;</button>
+        <img src="A-images/logo.jpg" style="width: 50px; height: 50px;">
+        <div class="course-title-path">Course Path<i class="bi bi-arrow-right-circle-fill"></i>(Sisense BI)</div>
+        <ul class="course-list-path">
+        <li>ElastiCube Technology</li>
+        <li>Data Modeling and ETL</li>
+        <li>In-Chip Analytics</li>
+        <li>Interactive Dashboards</li>
+        <li>Natural Language Query (NLQ)</li>
+        <li>Embedded Analytics</li>
+        <li>Data Governance and Security</li>
+        <li>AI-Driven Insights</li>
+        <li>Multi-Tenancy Architecture</li>
+         
+      </ul>
+      <div class="certificate"></div>
+      <div class="certificate-text">Course Completion Certificate</div>
+    </div>
+</div>
+
+
+
+
+<!--whatsapp integration-->
+ <!-- WhatsApp Icon -->
+ <div class="whatsapp-icon" id="whatsapp-icon">
+  <i class="fab fa-whatsapp"></i>
+</div>
+
+<!-- Popup -->
+<div class="popup" id="whatsapp-popup">
+  <div class="popup-header" style="color: orange;">Contact Abhishyandh</div>
+  <div class="popup-body">
+      <p style="color: green;">Feel free to send us a message below or chat directly with us on WhatsApp:</p>
+       
+  </div>
+  <div class="popup-footer">
+     
+      <a href="https://wa.me/918897830910?text=Hello%20Abhishyandh%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener noreferrer" class="whatsapp-button">
+             
+      <button class="chat-button" id="chat-with-abhi-button">Chat with Abhishyandh</button>
+      </a>
+  </div>
+</div>
+
+<script>
+ function toggleMenu() {
+    const mobileNav = document.getElementById("mobileNav");
+    if (mobileNav.style.display === "block") {
+        mobileNav.style.display = "none";
+    } else {
+        mobileNav.style.display = "block";
+    }
+}
+
+
+  const whatsappIcon = document.getElementById('whatsapp-icon');
+  const popup = document.getElementById('whatsapp-popup');
+  const sendMessageButton = document.getElementById('send-message-button');
+  const chatWithAbhiButton = document.getElementById('chat-with-abhi-button');
+  const messageInput = document.getElementById('message-input');
+  
+  // Toggle popup visibility
+  whatsappIcon.addEventListener('click', (event) => {
+      popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
+      event.stopPropagation();  
+  });
+
+  // Send message button click
+  sendMessageButton.addEventListener('click', () => {
+      const message = encodeURIComponent(messageInput.value.trim());
+      if (message) {
+          const url = `https://wa.me/8897830910?text=${message}`;
+          window.open(url, '_blank');
+          messageInput.value = '';  
+      } else {
+          alert('Please enter a message.');
+      }
+  });
+
+  // Chat with Abhishyandh button click
+  chatWithAbhiButton.addEventListener('click', () => {
+      const prefilledMessage = encodeURIComponent('May I know more about this?');
+      const url = `https://wa.me/8897830910?text=${prefilledMessage}`;
+      window.open(url, '_blank');
+  });
+
+  // Close popup when clicking outside
+  document.addEventListener('click', (event) => {
+      if (!popup.contains(event.target) && !whatsappIcon.contains(event.target)) {
+          popup.style.display = 'none';
+      }
+  });
+</script>
+
+ 
+
+    <script th:inline="javascript">
+		
+		
+		 function showPopup() {
+  document.getElementById('overlay').style.display = 'block';
+  document.getElementById('contactPopup').style.display = 'block';
+}
+
+function closePopup() {
+  document.getElementById('overlay').style.display = 'none';
+  document.getElementById('contactPopup').style.display = 'none';
+}
+
+// Show popup after 5 seconds
+setTimeout(showPopup, 3000);
+ 
+         
+document.addEventListener('DOMContentLoaded', function() {
+      const container = document.querySelector('.container-IT-Trainings-Course');
+      window.addEventListener('scroll', function() {
+        const scrollPosition = window.scrollY;
+        if (scrollPosition > 50) {
+          container.classList.add('scrolled');
+        } else {
+          container.classList.remove('scrolled');
+        }
+      });
+    });
+
+
+ //Features of Trainings
+  function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        // Function to add class 'in-view' when element is in viewport
+        function handleScroll() {
+            const cards = document.querySelectorAll('.card-IT');
+            cards.forEach(card => {
+                if (isInViewport(card)) {
+                    card.classList.add('in-view');
+                }
+            });
+        }
+
+        // Add scroll event listener
+        window.addEventListener('scroll', handleScroll);
+
+        // Trigger scroll event on page load to animate elements already in view
+        window.addEventListener('load', handleScroll);
+ </script>
+</body>
+</html>
